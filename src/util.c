@@ -11,6 +11,8 @@
 #include <fcntl.h>
 #else
 #include <windows.h>
+#define flockfile(file)
+#define funlockfile(file)
 #endif
 
 #ifdef USE_ZSTD
