@@ -10,6 +10,7 @@
 #include <pthread.h>
 #else
 #include <windows.h>
+#include <pthread.h>
 #endif
 #include <sys/time.h>
 
