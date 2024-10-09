@@ -4,7 +4,14 @@
 #include <stdint.h>
 #include <stdio.h>
 
+#ifndef min
 #define min(a,b) ((a) < (b) ? (a) : (b))
+#endif
+
+#ifndef max
+#define max(a,b) ((a) > (b) ? (a) : (b))
+#endif
+
 
 void *map_file(char *name, int shared, uint64_t *size);
 void unmap_file(void *data, uint64_t size);

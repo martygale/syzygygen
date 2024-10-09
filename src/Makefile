@@ -16,7 +16,7 @@ FLAGS += -DTBPIECES=7
 
 # Use libzstd instead of LZ4 for compression of temporary files.
 FLAGS += -DUSE_ZSTD
-LDFLAGS += -lzstd
+LDFLAGS += -lzstd -lwinpthread
 
 # Specify number of threads used for compression of temporary files.
 FLAGS += -DCOMPRESSION_THREADS=6
